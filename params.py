@@ -2,7 +2,8 @@ class Params():
 
     # data
     data_size = -1 # -1 to use all data
-    num_epochs = 10
+    # num_epochs = 10
+    num_epochs = 5
     train_prop = 0.9 # Not implemented atm
     data_dir = "./data/"
     train_dir = data_dir + "trainset/"
@@ -25,7 +26,8 @@ class Params():
     dropout = 0.2 # dropout probability, if None, don't use dropout
     zoneout = None # zoneout probability, if None, don't use zoneout
     optimizer = "adam" # Options: ["adadelta", "adam", "gradientdescent", "adagrad"]
-    batch_size = 50 if mode is not "test" else 100# Size of the mini-batch for training
+    # batch_size = 50 if mode is not "test" else 100# Size of the mini-batch for training
+    batch_size = 1
     save_steps = 50 # Save the model at every 50 steps
     clip = True # clip gradient norm
     norm = 5.0 # global norm
